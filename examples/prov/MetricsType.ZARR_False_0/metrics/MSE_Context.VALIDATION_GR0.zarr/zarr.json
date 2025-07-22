@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "name": "MSE",
+    "context": "Context.VALIDATION",
+    "source": "None"
+  },
+  "zarr_format": 3,
+  "consolidated_metadata": null,
+  "node_type": "group"
+}
