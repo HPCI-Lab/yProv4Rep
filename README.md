@@ -1,6 +1,6 @@
-# yProv4Reproducibility
+# yProv4Rep
 
-yProv4Reproducibility is a lightweight reproducibility verification framework that leverages PROV-JSON to ensure the full traceability and deterministic re-execution of computational workflows. It provides a simple way to confirm whether a job can be rerun in a clean Docker environment and yield exactly the same results.
+yProv4Rep (Reproducible Experiments with Provenance (or yProv4Reproducibility)) is a lightweight reproducibility verification framework that leverages PROV-JSON to ensure the full traceability and deterministic re-execution of computational workflows. It provides a simple way to confirm whether a job can be rerun in a clean Docker environment and yield exactly the same results.
 Overview
 
 This project is designed to automatically verify the reproducibility of a computational job by comparing its execution inside a controlled Docker container with the provenance data previously captured in a PROV-JSON file. The verification process does not just run the script again—it ensures that every artifact generated during execution matches byte-for-byte with the original outputs, validating that the workflow is truly reproducible.
