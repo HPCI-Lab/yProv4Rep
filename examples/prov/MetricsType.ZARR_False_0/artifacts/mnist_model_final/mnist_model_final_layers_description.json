@@ -1,1 +1,0 @@
-{"model": {"0": {"layer_type": "<class 'torch.nn.modules.linear.Linear'>", "in_features": "784", "out_features": "10", "dtype": "torch.float32"}, "1": {"layer_type": "<class 'torch.nn.modules.activation.ReLU'>"}}}
