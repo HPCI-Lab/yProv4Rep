@@ -18,5 +18,9 @@ RUN find . -name "requirements.txt" -exec pip install -r {} \;
 # RUN pip install --upgrade pip
 # RUN pip install pygraphviz
 
-RUN git clone https://github.com/HPCI-Lab/yProvML.git
-RUN cd yProvML; git switch development; pip install .; cd ..
+#RUN git clone https://github.com/HPCI-Lab/yProvML.git
+#RUN cd yProvML; git switch development; pip install .; cd ..
+
+RUN pip install yprov4ml
+
+

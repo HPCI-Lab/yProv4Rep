@@ -30,12 +30,12 @@ def main(rocrate_path):
 
     main_activity = provenance.get("activity")
     main_activity = main_activity[list(main_activity.keys())[0]]
-    source_code = "/".join(main_activity.get("yProv4ML:source_code", None).split("/")[1:])
+    source_code = "/".join(["prov"] + main_activity.get("yProv4ML:source_code", None).split("/")[1:])
     command = main_activity.get("prov-ml:execution_command", None)
     
     provenance_src = main_activity.get("yProv4ML:provenance_path", None)
-    if pathlib.Path(provenance_src).exists(): 
-        shutil.rmtree(provenance_src)
+    # if pathlib.Path(provenance_src).exists(): 
+    #     shutil.rmtree(provenance_src)
 
     if not os.path.exists(source_code):
         print(f"Error: Source code file not found at {source_code}")
