@@ -5,8 +5,6 @@ import subprocess
 import sys
 import shlex
 import uuid
-import pathlib
-import shutil
 
 from utils import get_output_files_list, check_hashes, find_provenance_file_in_artifact_directory, hash_output_files
 
